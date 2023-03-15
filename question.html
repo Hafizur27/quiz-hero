@@ -5,8 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>Here is our all question</h1>
+    <h2 class="text-center text-4xl my-10">Necessary <span class="bg-green-600 text-white px-2 rounded text-3xl">Question</span></h2>
+    <div>
+        <h3 class="text-center text-3xl my-10">1. what is the difference between map, filter, forEach & find ?</h3>
+        <table class="border-collapse border border-slate-400 w-9/12 mx-auto mb-10">
+            <thead>
+              <tr>
+                <th class="border border-slate-300">map</th>
+                <th class="border border-slate-300">filter</th>
+                <th class="border border-slate-300">forEach</th>
+                <th class="border border-slate-300">find</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-slate-300 p-4">map method returns a new array with the same length as the original array, where each element is transformed by the callback function passed as an argument. The original array is not modified.</td>
+                <td class="border border-slate-300 p-4">filter method  returns a new array with some or all of the elements of the original array, depending on whether they pass a test specified by the callback function. The original array is not modified.</td>
+                <td class="border border-slate-300 p-4">forEach method executes a provided function once for each array element, but it doesn't return anything. It's mainly used for performing side effects on each element of the array.</td>
+                <td class="border border-slate-300 p-4">find method returns the first element in the array that satisfies a specified test provided by the callback function. If no element satisfies the test, undefined is returned.</td>
+              </tr>
+              <tr>
+                <td class="border border-slate-300 p-4">
+                    <ul>Example:
+                        <li>const Array = [1, 2, 3];</li>
+                        <li>const newArray = Array.map(element => element * 2);</li>
+                        <li>console.log(newArray);</li>
+                        <li>newArray: [2, 4, 6]</li>
+                        <li>console.log(Array);</li>
+                        <li>Array: [1, 2, 3]</li>
+                    </ul> 
+                </td>
+                <td class="border border-slate-300 p-4">
+                    <ul>Example:
+                        <li>const Array = [1, 2, 4];</li>
+                        <li>const newArray = Array.filter(element => element % 2 === 0);</li>
+                        <li>console.log(newArray);</li>
+                        <li>newArray: [2, 4]</li>
+                        <li>console.log(Array);</li>
+                        <li>Array: [1, 2, 4]</li>
+                    </ul>
+                </td>
+                <td class="border border-slate-300 p-4">
+                    <ul>Example:
+                        <li>const Array = [1, 2];</li>
+                        <li>const newArray = Array.forEach(element => element % 2 === 0);</li>
+                        <li>firstElement: 1</li>
+                        <li>secondElement: 2</li>
+                        <li>console.log(Array);</li>
+                        <li>Array: [1, 2,]</li>
+                    </ul>
+                </td>
+                <td class="border border-slate-300 p-4">
+                    <ul>Example:
+                        <li>const Array = [1, 2, 3];</li>
+                        <li>const newValue = Array.find(element => element === 2);</li>
+                        <li>console.log(newValue);</li>
+                        <li>newValue: 2</li>
+                        <li>console.log(Array);</li>
+                        <li>Array: [1, 2, 3]</li>
+                    </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
 </body>
 </html>
+ 
