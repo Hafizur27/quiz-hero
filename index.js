@@ -71,6 +71,10 @@ const displayQuiz = (data) => {
 </div>`;
   });
 };
+// EventListener add for Blog button
+document.getElementById('blogBtn').addEventListener('click', function(){
+  console.log('blog btn click')
+})
 
 // EventListener for quiz submit button
 document.querySelector("#submit").addEventListener("click", () => {
