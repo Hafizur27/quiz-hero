@@ -73,7 +73,7 @@ const displayQuiz = (data) => {
 };
 // EventListener add for Blog button
 document.getElementById('blogBtn').addEventListener('click', function(){
-  console.log('blog btn click')
+  location.assign('http://127.0.0.1:5500/question.html');
 })
 
 // EventListener for quiz submit button
