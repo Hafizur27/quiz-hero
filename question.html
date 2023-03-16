@@ -10,14 +10,14 @@
 <body>
     <h2 class="text-center text-4xl my-10">Necessary <span class="bg-green-600 text-white px-2 rounded text-3xl">Question</span></h2>
     <div>
-        <h3 class="text-center text-3xl my-10">1. what is the difference between map, filter, forEach & find ?</h3>
+        <h3 class="text-center text-3xl my-10">1. what is the difference between map(), filter(), forEach() & find() methods ?</h3>
         <table class="border-collapse border border-slate-400 w-9/12 mx-auto mb-10">
             <thead>
               <tr>
-                <th class="border border-slate-300">map</th>
-                <th class="border border-slate-300">filter</th>
-                <th class="border border-slate-300">forEach</th>
-                <th class="border border-slate-300">find</th>
+                <th class="border border-slate-300">map()</th>
+                <th class="border border-slate-300">filter()</th>
+                <th class="border border-slate-300">forEach()</th>
+                <th class="border border-slate-300">find()</th>
               </tr>
             </thead>
             <tbody>
@@ -72,6 +72,45 @@
             </tbody>
           </table>
     </div>
+    <div>
+      <h3 class="text-center text-3xl my-10">2. What is the difference between local storage, session storage & cookies ?</h3>
+      <table class="border-collapse border border-slate-400 w-9/12 mx-auto mb-10">
+          <thead>
+            <tr>
+              <th class="border border-slate-300">Local Storage</th>
+              <th class="border border-slate-300">Session Storage</th>
+              <th class="border border-slate-300">Cookies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-slate-300 p-4">Local storage is a type of web storage that allows web applications to store and access data in a user's web browser. It provides a way for web applications to store persistent data locally on the user's device, even after the user has closed the browser window. The data stored in local storage remains available until it is explicitly cleared by the user or the web application that stored it. Local storage is typically used to store settings, preferences, or other application-specific data that needs to persist between browser sessions.</td>
+              <td class="border border-slate-300 p-4">Session storage is similar to local storage, but the data stored in it is only available for the duration of a single browser session. When the user closes the browser window, the data stored in session storage is automatically cleared. Session storage is typically used to store temporary data, such as a user's shopping cart contents or other transient data that is only needed during the current session.</td>
+              <td class="border border-slate-300 p-4">Cookies are small text files that are stored on a user's device by a web browser. They are typically used to store information about the user's preferences, login information, and other data that needs to persist between browser sessions. Cookies can be set to expire after a specific time period or when the user closes the browser window. They can also be set to be accessible only to specific web pages or domains. Cookies are often used for tracking user behavior and delivering personalized content.</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-300 p-4">The storage capacity of local storage is 5MB/10MB</td>
+              <td class="border border-slate-300 p-4">The storage capacity of session storage is 5MB</td>
+              <td class="border border-slate-300 p-4">The storage capacity of Cookies is 4KB</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-300 p-4">As it is not session-based, it must be deleted via javascript or manually</td>
+              <td class="border border-slate-300 p-4">It’s session-based and works per window or tab. This means that data is stored only for the duration of a session, i.e., until the browser (or tab) is closed</td>
+              <td class="border border-slate-300 p-4">Cookies expire based on the setting and working per tab and window </td>
+            </tr>
+            <tr>
+              <td class="border border-slate-300 p-4">The client  can only read local storage</td>
+              <td class="border border-slate-300 p-4">The client  can only read session storage</td>
+              <td class="border border-slate-300 p-4">Both clients and servers can read and write the cookies</td>
+            </tr>
+            <tr>
+              <td class="border border-slate-300 p-4">There is no transfer of data to the server</td>
+              <td class="border border-slate-300 p-4">There is no transfer of data to the server</td>
+              <td class="border border-slate-300 p-4">Data transfer to the server is exist</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
 </body>
 </html>
  
