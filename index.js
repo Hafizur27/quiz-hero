@@ -74,7 +74,7 @@ const displayQuiz = (data) => {
 };
 // EventListener for Blog button
 document.getElementById('blogBtn').addEventListener('click', function(){
-  location.assign('http://127.0.0.1:5500/question.html');
+  location.assign('question.html');
 })
 
 // EventListener for quiz submit button
