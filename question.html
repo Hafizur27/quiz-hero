@@ -10,7 +10,7 @@
 <body>
     <h2 class="text-center text-4xl my-10">Necessary <span class="bg-green-600 text-white px-2 rounded text-3xl">Question</span></h2>
     <div>
-        <h3 class="text-center text-3xl my-10">1. what is the difference between map(), filter(), forEach() & find() methods ?</h3>
+        <h3 class="text-center text-3xl my-10 bg-green-300 text-gray-800 w-9/12 mx-auto">1. what is the difference between map(),<br>  filter(), forEach() & find() methods ?</h3>
         <table class="border-collapse border border-slate-400 w-9/12 mx-auto mb-10">
             <thead>
               <tr>
@@ -73,7 +73,7 @@
           </table>
     </div>
     <div>
-      <h3 class="text-center text-3xl my-10">2. What is the difference between local storage, session storage & cookies ?</h3>
+      <h3 class="text-center text-3xl my-10">2. What is the difference between <br> local storage, session storage & cookies ?</h3>
       <table class="border-collapse border border-slate-400 w-9/12 mx-auto mb-10">
           <thead>
             <tr>
@@ -116,8 +116,12 @@
     <p class="w-9/12 mx-auto mb-10">The event loop is a mechanism used in many programming languages, including JavaScript, to handle asynchronous operations and non-blocking I/O. It is a continuous process that enables an application to respond to multiple events simultaneously without blocking the main thread or freezing the user interface. <br> In JavaScript, the event loop operates by continuously monitoring two queues: the call stack and the task queue. When the call stack is empty, the event loop checks the task queue for any pending tasks that can be executed. If there are any pending tasks, the event loop moves them from the task queue to the call stack, and the JavaScript engine executes them one by one. <br> If a pending task involves an asynchronous operation, such as a network request or a timer, it is scheduled to run in the background by the runtime environment, and the JavaScript engine continues executing other tasks from the call stack. When the asynchronous operation is completed, the runtime environment adds the corresponding callback function to the task queue. <br>The event loop processes the task queue and executes the callback function, updating the state of the application or triggering new asynchronous operations. The event loop also has a microtask queue, which is a separate queue that holds small and fast-running tasks, such as promises or process.nextTick() callbacks. The microtask queue is processed before the task queue, ensuring that these high-priority tasks are executed as soon as possible. </p>
 </div>
 <div>
-  <h3 class="text-center text-3xl my-10">4. What is the definition quizTimer function ?</h3>
+  <h3 class="text-center text-3xl my-10">4. What is the definition quizTimer() function ?</h3>
   <p class="w-9/12 mx-auto mb-10">Here quizTimer is a function, this function used for set time for quiz. it has one parameter "dismiss", which is indicating boolean value whether to stop timer or start timer. if the dismiss contain true value , we called clearInterval method to stop the timer and return from the function. and if dismiss value is false we called setInterval method for set timer that executes a callback function every 1 second.Inside the callback function, the current count is displayed on the webpage, and the count is incremented by 1 second. The if statement checks whether the count has exceeded 60 seconds, and if it has, the classList property of the countHtml element is updated to alternate between two different CSS classes (text-red-300 and text-red-700) every 2 seconds</p>
+</div>
+<div>
+  <h3 class="text-center text-3xl my-10">5. What is the definition chooseQuiz() function ?</h3>
+  <p class="w-9/12 mx-auto mb-10">Here chooseQuiz() function takes two parameters index and givenAns. it is update the "answers" array with the selected answer. The find method is used to check if an answer already exists for the quiz with the specified index in the answers array. The find method returns the first element in the array that satisfies the given condition, which is whether the id property of the answer object matches the id property of the quiz object at the specified index in quizData. If an answer already exists for the quiz, the splice method is used to replace the existing answer object with a new object that has the same properties as the quiz object, except for the givenAns property, which is set to the value of the givenAns parameter. If an answer does not exist for the quiz, a new answer object is created by using the spread operator to copy the properties of the quiz object, and the givenAns property is set to the value of the givenAns parameter. The new answer object is then added to the end of the answers array using the push method. Finally, the displayAnswers function is called with the updated answers array as an argument, which updates the UI to display the selected answer for each quiz. </p>
 </div>
 </body>
 </html>
