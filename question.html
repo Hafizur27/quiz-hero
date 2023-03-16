@@ -84,9 +84,9 @@
           </thead>
           <tbody>
             <tr>
-              <td class="border border-slate-300 p-4">Local storage is a type of web storage that allows web applications to store and access data in a user's web browser. It provides a way for web applications to store persistent data locally on the user's device, even after the user has closed the browser window. The data stored in local storage remains available until it is explicitly cleared by the user or the web application that stored it. Local storage is typically used to store settings, preferences, or other application-specific data that needs to persist between browser sessions.</td>
-              <td class="border border-slate-300 p-4">Session storage is similar to local storage, but the data stored in it is only available for the duration of a single browser session. When the user closes the browser window, the data stored in session storage is automatically cleared. Session storage is typically used to store temporary data, such as a user's shopping cart contents or other transient data that is only needed during the current session.</td>
-              <td class="border border-slate-300 p-4">Cookies are small text files that are stored on a user's device by a web browser. They are typically used to store information about the user's preferences, login information, and other data that needs to persist between browser sessions. Cookies can be set to expire after a specific time period or when the user closes the browser window. They can also be set to be accessible only to specific web pages or domains. Cookies are often used for tracking user behavior and delivering personalized content.</td>
+              <td class="border border-slate-300 p-4">localStorage is a property that allows JavaScript sites and apps to save key-value pairs in a web browser with no expiration date. This means the data stored in the browser will persist even after the browser window is closed.</td>
+              <td class="border border-slate-300 p-4">Session storage allows you to store data in the browser depending on the system memory and the data stored in the browser until the browser is closed. In other words, closing the browser will clear all the data stored in session storage.</td>
+              <td class="border border-slate-300 p-4">A cookie is an amount of information that persists between a server-side and a client-side. A web browser stores this information at the time of browsing. A cookie contains the information as a string generally in the form of a name-value pair separated by semi-colons.</td>
             </tr>
             <tr>
               <td class="border border-slate-300 p-4">The storage capacity of local storage is 5MB/10MB</td>
@@ -111,6 +111,9 @@
           </tbody>
         </table>
   </div>
+  <div>
+    <h3 class="text-center text-3xl my-10">3. What is event loop and how does work event loop ?</h3>
+    <p class="w-9/12 mx-auto mb-10">The event loop is a mechanism used in many programming languages, including JavaScript, to handle asynchronous operations and non-blocking I/O. It is a continuous process that enables an application to respond to multiple events simultaneously without blocking the main thread or freezing the user interface. <br> In JavaScript, the event loop operates by continuously monitoring two queues: the call stack and the task queue. When the call stack is empty, the event loop checks the task queue for any pending tasks that can be executed. If there are any pending tasks, the event loop moves them from the task queue to the call stack, and the JavaScript engine executes them one by one. <br> If a pending task involves an asynchronous operation, such as a network request or a timer, it is scheduled to run in the background by the runtime environment, and the JavaScript engine continues executing other tasks from the call stack. When the asynchronous operation is completed, the runtime environment adds the corresponding callback function to the task queue. <br>The event loop processes the task queue and executes the callback function, updating the state of the application or triggering new asynchronous operations. The event loop also has a microtask queue, which is a separate queue that holds small and fast-running tasks, such as promises or process.nextTick() callbacks. The microtask queue is processed before the task queue, ensuring that these high-priority tasks are executed as soon as possible. </p>
+</div>
 </body>
 </html>
- 
